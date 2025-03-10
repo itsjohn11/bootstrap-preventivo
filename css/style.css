@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: black;
+    padding-block-end: 5%;
+    
+}
+
+.copy {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
