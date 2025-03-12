@@ -6,12 +6,12 @@
 footer {
     background-color: black;
     padding-block-end: 5%;
-    
 }
 
 .copy {
     color: white;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    
 }
