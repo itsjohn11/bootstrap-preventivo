@@ -71,7 +71,7 @@
                     <h1>Richiesta preventivo</h1>
                     <p>Compila il forum per richiedere un preventivo per i nostri servizi di sviluppo<p>
                     <div class="row">
-                        <div class="col-12 col-lg-8">
+                        <div class="col-12 col-md-6">
                             <form action="" id="request-quote">
                                 <div class="mb-3">
                                     <label for="nameInput" class="form-label">Nome</label>
@@ -90,8 +90,8 @@
                                     <select class="form-select" id="work">
                                         <option selected>Tipo di lavoro</option>
                                         <option value="backendDevelopment">Sviluppo backend</option>
-                                        <option value="frontendDevelopment">Sviluppo frontend</option>
-                                        <option value="projectAnalysis">Analisi progettuale</option>
+                                        <option value="2">Sviluppo frontend</option>
+                                        <option value="3">Analisi progettuale</option>
                                     </select>
                                 </div>
                                 <div class="mb-3">
@@ -106,34 +106,33 @@
                                 </div>
                                 <div class="d-grid gap-2 col-6 mx-auto">
                                     <button type="preventive" class="btn btn-primary">Calcola preventivo</button>
-                                    <h2 class="m-2">Prezzo finale €</h2>
+                                    <h2 class="m-2" id="finalPride">Prezzo finale €</h2>
                                 </div>
                             </form>
                         </div>
-                </section>
-                <section>
-                    <div class="col-12 col-lg-4">
-                        <img src="./img/bravo-sviluppatore-web-cercando-interessati-durante-il-lavoro-nel-suo-ufficio-mjgmd4.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">I nostri servizi</h5>
-                            <p class="card-text">Se hai bisogno di aiuto puoi contattarci.</p>
+                
+                        <div class="col-12 col-md-6">
+                            <img src="./img/bravo-sviluppatore-web-cercando-interessati-durante-il-lavoro-nel-suo-ufficio-mjgmd4.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">I nostri servizi</h5>
+                                <p class="card-text">Se hai bisogno di aiuto puoi contattarci.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">help@boolfactory.test</li>
+                                <li class="list-group-item">+12 1234567890</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-desk">help desk</a>
+                            </div>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">help@boolfactory.test</li>
-                            <li class="list-group-item">+12 1234567890</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="#" class="card-desk">help desk</a>
-                        </div>
-                    </div>
-                </section>
+                    </section>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p class="copy">2024 - tutti i diritti riservati</p>
+        <p>2024 - tutti i diritti riservati</p>
     </footer>
     <!-- Collegamento js -->
     <script src="./js/script.js"></script>

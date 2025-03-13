@@ -1,6 +1,14 @@
 console.log("ciao");
 
 
+/*
+esecuzione logica
+
+1. Assegnare l'importo base di 1h al servizio 
+2. trovare l'importo totale in base al servizio richiesto delle ore lavorative
+3. 
+*/
+
 // let discount = 0;
 // if(YHDNU32, JANJC63, PWKCN25, SJDPO96, POCIE24) {
 //     discount = 35;
@@ -33,30 +41,51 @@ console.log("ciao");
 // }else if(invalid){
 //     discount = 0;
 // }
+
 const oneHourBd = 20.50;
 const oneHoursFd = 15.30;
 const oneHoursPa = 33.60; 
-console.log(oneHoursPa);
-
-const workingHoursBd = oneHourBd * 10;
-const workingHoursFd = oneHoursFd * 10;
-const workingHoursPa  = oneHoursPa * 10;
 
 
-if(oneHourBd === )
+const tenHourBd = oneHourBd * 10;
+const tenHoursFd = oneHoursFd * 10;
+const tenHourPa = oneHoursPa * 10;
 
-// const requestQuote = document.getElementById("request-quote");
-// const workSelect = document.getElementById("work");
-// console.log(workSelect);
+// let finalPride;
+ const serviceOne = backendDevelopment = tenHourBd;
+ const serviceTwo = frontendDevelopment = tenHoursFd;
+ const serviceThree = projectAnalysis = tenHourPa;
+ console.log(tenHourPa);
+ 
+ let finalPride;
+ if(backendDevelopment === serviceOne){
+    finalPride = `serviceOne`;
+ }else if(frontendDevelopment === serviceTwo){
+    console.log(frontendDevelopmen);
+ }else if(projectAnalysis === serviceThree){
 
+ }
+
+// if(moltiplyOne){
+//     console.log("moltiplyOne");
+// }else if(workingHoursFd){
+//     console.log("workingHoursFd");
+// }else if(workingHoursPa){
+
+// }
+
+const requestQuote = document.getElementById("request-quote");
+const workSelect = document.getElementById("work");
+const finalPrideSelection = document.getElementById("finalPride")
+// console.log(finalPride);
 
 requestQuote.addEventListener("submit", handleresquestQuote);
 console.log(requestQuote);
 
-
 function handleresquestQuote(event){
     event.preventDefault();
     const work = workSelect.value;
-    console.log(work);
+    const finalPride = finalPrideSelection.value;
+    console.log(finalPride);
 
 }
