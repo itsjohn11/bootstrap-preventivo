@@ -9,23 +9,6 @@ esecuzione logica
 3. 
 */
 
-// let discount = 0;
-// if(YHDNU32, JANJC63, PWKCN25, SJDPO96, POCIE24) {
-//     discount = 35;
-// }
-
-
-
-
-// let codeDiscount;
-//  YHDNU32;
-// console.log(codeDiscount);
-
-
-// const codeDiscount2 = JANJC63;
-// const codeDiscount3 = PWKCN25;
-// const codeDiscount4 = SJDPO96;
-// const codeDiscount5 = POCIE24;
 
 // let
 // if(YHDNU32){
@@ -42,14 +25,28 @@ esecuzione logica
 //     discount = 0;
 // }
 
+//Prezzo servizio 1h
 const oneHourBd = 20.50;
 const oneHoursFd = 15.30;
 const oneHoursPa = 33.60; 
 
-
+//calcolo prezzo servizio 10h
 const tenHourBd = oneHourBd * 10;
 const tenHoursFd = oneHoursFd * 10;
 const tenHourPa = oneHoursPa * 10;
+
+// //codici sconto con const
+// const codeDiscountOne =`YHDNU32`;
+// console.log(codeDiscountOne);
+
+//codici sconto con let
+let codeDiscount;
+codeDiscount = `YHDNU32`;
+codeDiscount = `JANJC63`;
+codeDiscount = `PWKCN25`;
+console.log(codeDiscount);
+
+
 
 // let finalPride;
  const serviceOne = backendDevelopment = tenHourBd;
