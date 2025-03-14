@@ -90,8 +90,8 @@
                                     <select class="form-select" id="work">
                                         <option selected>Tipo di lavoro</option>
                                         <option value="backendDevelopment">Sviluppo backend</option>
-                                        <option value="2">Sviluppo frontend</option>
-                                        <option value="3">Analisi progettuale</option>
+                                        <option value="frontendDevelopment">Sviluppo frontend</option>
+                                        <option value="projectAnalysis">Analisi progettuale</option>
                                     </select>
                                 </div>
                                 <div class="mb-3">
@@ -99,15 +99,18 @@
                                         5</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
                                 </div>
-
+                                <div class="mb-3">
+                                    <label for="codeDiscountInput" class="form-label">Codice sconto (opzionale)</label>
+                                    <input type="email" class="form-control" id="codediscountInput">
+                                </div>
                                 <div class="mb-3 form-privacy">
                                     <input type="checkbox" class="form-check-input" id="formPrivacy">
                                     <label class="form-check-label" for="formPrivacy">Accetto la Privacy Policy</label>
                                 </div>
                                 <section>
                                     <div class="d-grid gap-2 col-6 mx-auto">
-                                        <button type="preventive" class=" col-12 md-3 btn btn-primary">Calcola preventivo</button>
-                                        <h2 class="col-12 md-3 m-2" id="finalPride">Prezzo finale €</h2>
+                                        <button id="preventive-button" class=" col-12 md-3 btn btn-primary">Calcola preventivo</button>
+                                        <p class="col-12 md-3 m-2" id="finalPride">Prezzo finale €</p>
                                     </div>
                                 </section>
                             </form>

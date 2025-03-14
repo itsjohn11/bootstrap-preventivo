@@ -54,11 +54,10 @@ console.log(codeDiscount);
  const serviceThree = projectAnalysis = tenHourPa;
  console.log(tenHourPa);
  
- let finalPride;
- if(backendDevelopment === serviceOne){
-    finalPride = `serviceOne`;
+ 
+ if(backendDevelopment === ){
+    console.log(`serviceOne`);
  }else if(frontendDevelopment === serviceTwo){
-    console.log(frontendDevelopmen);
  }else if(projectAnalysis === serviceThree){
 
  }
@@ -76,13 +75,13 @@ const workSelect = document.getElementById("work");
 const finalPrideSelection = document.getElementById("finalPride")
 // console.log(finalPride);
 
-requestQuote.addEventListener("submit", handleresquestQuote);
-console.log(requestQuote);
+// requestQuote.addEventListener("submit", handleresquestQuote);
+// console.log(requestQuote);
 
-function handleresquestQuote(event){
-    event.preventDefault();
-    const work = workSelect.value;
-    const finalPride = finalPrideSelection.value;
-    console.log(finalPride);
+// function handleresquestQuote(event){
+//     event.preventDefault();
+//     const work = workSelect.value;
+//     const finalPride = finalPrideSelection.value;
+//     console.log(finalPride);
 
-}
+// }
