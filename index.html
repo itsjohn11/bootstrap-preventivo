@@ -69,7 +69,8 @@
             <div class="container py-5">
                 <section>
                     <h1>Richiesta preventivo</h1>
-                    <p>Compila il forum per richiedere un preventivo per i nostri servizi di sviluppo<p>
+                    <p>Compila il forum per richiedere un preventivo per i nostri servizi di sviluppo
+                    <p>
                     <div class="row">
                         <div class="col-12 col-md-6">
                             <form action="" id="request-quote">
@@ -89,36 +90,41 @@
                                     <label for="work" class="form-label">Tipo di lavoro</label>
                                     <select class="form-select" id="work">
                                         <option selected>Tipo di lavoro</option>
-                                        <option value="backendDevelopment">Sviluppo backend</option>
-                                        <option value="frontendDevelopment">Sviluppo frontend</option>
-                                        <option value="projectAnalysis">Analisi progettuale</option>
+                                        <option value="Sviluppo backend">Sviluppo backend</option>
+                                        <option value="Sviluppo frontend">Sviluppo frontend</option>
+                                        <option value="Analisi progettuale">Analisi progettuale</option>
                                     </select>
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlTextarea1" class="form-label">Textarea con bootstrap
                                         5</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="codeDiscountInput" class="form-label">Codice sconto (opzionale)</label>
-                                    <input type="email" class="form-control" id="codediscountInput">
-                                </div>
+                                </div class="mb-3">
+                                <form code="myForm" action="/action_page.php" onsubmit="return validateForm()"
+                                    method="post">
+                                    <label for="code" class="form-label">Codice sconto (opzionale)</label>
+                                    <input type="text" codice="fcode" class="form-control" id="code">
+                                </form>
                                 <div class="mb-3 form-privacy">
                                     <input type="checkbox" class="form-check-input" id="formPrivacy">
                                     <label class="form-check-label" for="formPrivacy">Accetto la Privacy Policy</label>
                                 </div>
                                 <section>
-                                    <div class="d-grid gap-2 col-6 mx-auto">
-                                        <button id="preventive-button" class=" col-12 md-3 btn btn-primary">Calcola preventivo</button>
-                                        <p class="col-12 md-3 m-2" id="finalPride">Prezzo finale €</p>
+                                    <div class="col-6 mt-4">
+                                        <button type="submit" id="preventive-button" class="btn btn-primary">Calcola
+                                            preventivo</button>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <p class="col-lg-6 m-3 px-3" id="finalPride"><strong>Prezzo finale</strong> €</p>
                                     </div>
                                 </section>
                             </form>
                         </div>
-                
+
                         <div class="col-12 col-md-6">
                             <img src="./img/bravo-sviluppatore-web-cercando-interessati-durante-il-lavoro-nel-suo-ufficio-mjgmd4.jpg"
                                 class="card-img-top" alt="...">
+
                             <div class="card-body">
                                 <h5 class="card-title">I nostri servizi</h5>
                                 <p class="card-text">Se hai bisogno di aiuto puoi contattarci.</p>
@@ -131,7 +137,7 @@
                                 <a href="#" class="card-desk">help desk</a>
                             </div>
                         </div>
-                    </section>
+                </section>
             </div>
         </section>
     </main>

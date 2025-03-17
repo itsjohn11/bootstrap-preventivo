@@ -10,78 +10,56 @@ esecuzione logica
 */
 
 
-// let
-// if(YHDNU32){
-//     discount = 35;
-// }else if(JANJC63){
-//     discount = 35;
-// }else if(PWKCN25){
-//     discount = 35;
-// }else if(SJDPO96){
-//     discount = 35;
-// }else if(POCIE24){
-//     discount = 35;
-// }else if(invalid){
-//     discount = 0;
-// }
-
 //Prezzo servizio 1h
 const oneHourBd = 20.50;
 const oneHoursFd = 15.30;
 const oneHoursPa = 33.60; 
 
 //calcolo prezzo servizio 10h
-const tenHourBd = oneHourBd * 10;
-const tenHoursFd = oneHoursFd * 10;
-const tenHourPa = oneHoursPa * 10;
-
-// //codici sconto con const
-// const codeDiscountOne =`YHDNU32`;
-// console.log(codeDiscountOne);
-
-//codici sconto con let
-let codeDiscount;
-codeDiscount = `YHDNU32`;
-codeDiscount = `JANJC63`;
-codeDiscount = `PWKCN25`;
-console.log(codeDiscount);
-
-
-
-// let finalPride;
- const serviceOne = backendDevelopment = tenHourBd;
- const serviceTwo = frontendDevelopment = tenHoursFd;
- const serviceThree = projectAnalysis = tenHourPa;
- console.log(tenHourPa);
- 
- 
- if(backendDevelopment === ){
-    console.log(`serviceOne`);
- }else if(frontendDevelopment === serviceTwo){
- }else if(projectAnalysis === serviceThree){
-
- }
-
-// if(moltiplyOne){
-//     console.log("moltiplyOne");
-// }else if(workingHoursFd){
-//     console.log("workingHoursFd");
-// }else if(workingHoursPa){
-
-// }
+const servicePriceBack = oneHourBd * 10;
+console.log(servicePriceBack);
+const servicePriceFront = oneHoursFd * 10;
+console.log(servicePriceFront);
+const servicePriceAnalysisProject = oneHoursPa * 10;
+console.log(servicePriceAnalysisProject);
 
 const requestQuote = document.getElementById("request-quote");
 const workSelect = document.getElementById("work");
 const finalPrideSelection = document.getElementById("finalPride")
-// console.log(finalPride);
 
-// requestQuote.addEventListener("submit", handleresquestQuote);
-// console.log(requestQuote);
+requestQuote.addEventListener("submit", handleresquestQuote);
+console.log(requestQuote);
 
-// function handleresquestQuote(event){
-//     event.preventDefault();
-//     const work = workSelect.value;
-//     const finalPride = finalPrideSelection.value;
-//     console.log(finalPride);
+function handleresquestQuote(event){
+    event.preventDefault();
+    const work = workSelect.value;
+    /* 
+    Se il cliente sceglie il (backend), il prezzo sarà di 20.50/h * 10/h = € 205 
+    altrimenti
+    Se il cliente sceglie il frontend, il prezzo sarà di 15.30/h * 10/h = € 153 
+    altrimenti
+    Se il cliente sceglie il analisi progettuale, il prezzo sarà di 33.60/h * 10/h = € 336
+    se utilizza 1 dei 5 codici sconto validi viene applicato uno sconto del 25% sul prezzo finale
+    altrimenti
+    se inserisce dei codici sconti non validi non verrà calcolato nessuno sconto
+    */
 
-// }
+    if(work === `backendDevelopment`){
+        console.log(servicePriceBack);
+    }else if(work === `frontendDevelopment`){
+        console.log(servicePriceFront);
+    }else if(work === `AnalysisProjec`){
+        console.log(servicePriceAnalysisProject);
+    }
+
+    let discount = 0;
+    if(code === "YHDNU32"){
+        discount = 25;
+    }
+    
+   let finalPride;
+   finalPride = work - (servicePriceBack * discount / 100);
+    
+}
+console.log(finalPride);
+console.log(code);
