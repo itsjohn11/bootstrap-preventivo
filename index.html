@@ -2,151 +2,111 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preventivo</title>
-    <!-- collegamento css -->
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- collegamento bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preventivo</title>
+  <!-- collegamento css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- collegamento bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 </head>
 
 <body>
-    <header></header>
-    <main>
-        <section>
-            <nav class="navbar navbar-dark bg-dark fixed-top">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Bool factory</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Dropdown
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-dark">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <form class="d-flex mt-3" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-success" type="submit">Search</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-            <hr>
-
-            <div class="container py-5">
-                <section>
-                    <h1>Richiesta preventivo</h1>
-                    <p>Compila il forum per richiedere un preventivo per i nostri servizi di sviluppo
-                    <p>
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <form action="" id="request-quote">
-                                <div class="mb-3">
-                                    <label for="nameInput" class="form-label">Nome</label>
-                                    <input type="name" class="form-control" id="nameInput">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="surnameInput" class="form-label">Cognome</label>
-                                    <input type="surname" class="form-control" id="surnameInput">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="emailInput" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="emailInput">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="work" class="form-label">Tipo di lavoro</label>
-                                    <select class="form-select" id="work">
-                                        <option selected>Tipo di lavoro</option>
-                                        <option value="Sviluppo backend">Sviluppo backend</option>
-                                        <option value="Sviluppo frontend">Sviluppo frontend</option>
-                                        <option value="Analisi progettuale">Analisi progettuale</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Textarea con bootstrap
-                                        5</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-                                </div class="mb-3">
-                                <form code="myForm" action="/action_page.php" onsubmit="return validateForm()"
-                                    method="post">
-                                    <label for="code" class="form-label">Codice sconto (opzionale)</label>
-                                    <input type="text" codice="fcode" class="form-control" id="code">
-                                </form>
-                                <div class="mb-3 form-privacy">
-                                    <input type="checkbox" class="form-check-input" id="formPrivacy">
-                                    <label class="form-check-label" for="formPrivacy">Accetto la Privacy Policy</label>
-                                </div>
-                                <section>
-                                    <div class="col-6 mt-4">
-                                        <button type="submit" id="preventive-button" class="btn btn-primary">Calcola
-                                            preventivo</button>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <p class="col-lg-6 m-3 px-3" id="finalPride"><strong>Prezzo finale</strong> €</p>
-                                    </div>
-                                </section>
-                            </form>
-                        </div>
-
-                        <div class="col-12 col-md-6">
-                            <img src="./img/bravo-sviluppatore-web-cercando-interessati-durante-il-lavoro-nel-suo-ufficio-mjgmd4.jpg"
-                                class="card-img-top" alt="...">
-
-                            <div class="card-body">
-                                <h5 class="card-title">I nostri servizi</h5>
-                                <p class="card-text">Se hai bisogno di aiuto puoi contattarci.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">help@boolfactory.test</li>
-                                <li class="list-group-item">+12 1234567890</li>
-                            </ul>
-                            <div class="card-body">
-                                <a href="#" class="card-desk">help desk</a>
-                            </div>
-                        </div>
-                </section>
+  <header>
+    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Servizi</a>
+            <a class="nav-link" href="#">Contatti</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container py-4">
+      <div class="row">
+        <section class="col-12 col-lg-6">
+          <h1>Richiesta preventivo</h1>
+          <p>compila il form per ricreare un preventivo per i nostri servizi di sviluppo</p>
+          <form action="" id="request-quote">
+            <div class="mb-3">
+              <label for="name">Nome</label>
+              <input class="form-control" type="text" id="name" autocomplete="off">
             </div>
-        </section>
-    </main>
+            <div class="mb-3">
+              <label for="surname">Cognome</label>
+              <input class="form-control" type="text" id="surname" autocomplete="off">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input class="form-control" type="email" id="email" autocomplete="off">
+            </div>
+            <div>
+              <label for="servizio">Tipo di servizio</label>
+              <select class="form-select" id="service">
+                <option value="seleziona servizio">seleziona il tipo di servizio</option>
+                <option value="frontend development">servizio frontend</option>
+                <option value="backend development">servizio backend</option>
+                <option value="project analysis">Analisi progettuale</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="code">Codice Promozionale (opzionale)</label>
+              <input class="form-control" type="text" id="code" autocomplete="off">
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-3">
+                <button type="submit" id="preventive-btn" class="btn btn-primary mt-3">Calcola Preventivo</button>
+              </div>
+            </div>
+            <div class="m-3 col-12 col-md-3">
+              <div class="">
+                <p id="message">Prezzo €</p>
+              </div>
+            </div>
+          </form>
+      </section>
 
-    <footer class="footer">
-        <p>2024 - tutti i diritti riservati</p>
-    </footer>
-    <!-- Collegamento js -->
-    <script src="./js/script.js"></script>
+      <section class="col-12 col-lg-6">
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">I nostri servizi</h5>
+            <p class="card-text">Se hai bisogno di aiuto puoi contattarci.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">help@boolfactory.test</li>
+            <li class="list-group-item">+1122334455</li>
+            
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Help desk</a>
+          </div>
+      </section>
+
+    </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>2024 - tutti i diritti riservati</p>
+  </footer>
+  <!-- Collegamento js -->
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

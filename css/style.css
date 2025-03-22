@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+.collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
 footer {
     background-color: black;
     padding: 20px 0;
