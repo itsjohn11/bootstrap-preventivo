@@ -79,8 +79,7 @@ function handlerequestQuote(event){
     
 
     messageElement.classList.add(messageClass);
-    messageElement.innerText = `€ ${finalPrice}`;
-    
-    // console.log("submit");
+    messageElement.innerText = `€ ${messageClass} ${finalPrice}`;
+
     
 }
