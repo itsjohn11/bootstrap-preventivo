@@ -1,12 +1,11 @@
-console.log("ciao");
-205
-
 /*
 esecuzione logica
 
 1. Assegnare l'importo base di 1h al servizio 
 2. trovare l'importo totale in base al servizio richiesto delle ore lavorative
-3. 
+3. definire il codice sconto
+4. inserire tutti i dati nel form
+5. stampare il prezzo finale 
 */
 
 
@@ -23,21 +22,18 @@ console.log(servicePriceFront);
 const servicePriceAnalysisProject = oneHoursPa * 10;
 console.log(servicePriceAnalysisProject);
 
-let YHDNU32;
- YHDNU32 = 153 - (153 * 25 / 100) ;
- YHDNU32 = 205 * 25 / 100;
-// const preventiveButton = document.getElementById("preventive-button");
-// console.log("preventiveButton");
+let discount;
+discount = `YHDNU32`;
+discount = `JANJC63`;
+
+
+//  YHDNU32 = 205 - (153 * 25 / 100) ;
+//  YHDNU32 = 205 * 25 / 100;
 
 const requestQuote = document.getElementById("request-quote");
-console.log("requestQuote");
 const nameInput = document.getElementById("name");
-console.log(nameInput);
 const serviceSelect = document.getElementById("service");
-console.log(serviceSelect);
-
 const messageElement = document.getElementById("message");
-console.log(message);
 
 
 const prideElement = document.getElementById("pride");
@@ -64,22 +60,15 @@ function handlerequestQuote(event){
     let codeClass;
     if(code === `YHDNU32`){
         codeClass = 25;
-    }else if(code === `0`){
-
+    }else if(code === `JANJC63`){
+        codeClass = 25;
     }
-    console.log(codeClass);
-    
-    console.log(messageClass);
     const YHDNU32 = messageClass - (messageClass * 25 / 100);
     console.log(YHDNU32);
     
-    
     const finalPrice = messageClass - (messageClass * 25 / 100);
     console.log(finalPrice);
-    
 
-    messageElement.classList.add(messageClass);
-    messageElement.innerText = `€ ${messageClass} ${finalPrice}`;
 
-    
+    messageElement.innerText = `€ ${messageClass}`;
 }
