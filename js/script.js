@@ -22,22 +22,23 @@ console.log(servicePriceFront);
 const servicePriceAnalysisProject = oneHoursPa * 10;
 console.log(servicePriceAnalysisProject);
 
-let discount;
-discount = `YHDNU32`;
-discount = `JANJC63`;
+//Array servizio e sconto
+const service = ["frontend development","backend development","project analysis"];
+const discount = ["YHDNU32", "JANJC63", "PWKCN25", "SJDPO96", "POCIE24"];
 
 
-//  YHDNU32 = 205 - (153 * 25 / 100) ;
-//  YHDNU32 = 205 * 25 / 100;
+for (let i = 0; i < service.length; i++){
+    const curService = service[i];
+     console.log(curService);
+     
+ }
 
 const requestQuote = document.getElementById("request-quote");
 const nameInput = document.getElementById("name");
 const serviceSelect = document.getElementById("service");
 const messageElement = document.getElementById("message");
-
-
 const prideElement = document.getElementById("pride");
-console.log(prideElement);
+
 
 requestQuote.addEventListener("submit", handlerequestQuote);
 
@@ -46,29 +47,38 @@ function handlerequestQuote(event){
     console.log("request-quote");
     const name = nameInput.value;
     const service = serviceSelect.value;
-    console.log(service);
 
+    
     let messageClass;
     if(service === `frontend development`){
-        messageClass = "205";
+         messageClass= "205";
     }else if(service === `backend development`){
-        messageClass = "153";
+         messageClass = "153";
     }else if(service === `project analysis`){
         messageClass = "336";
     }
 
-    let codeClass;
-    if(code === `YHDNU32`){
-        codeClass = 25;
-    }else if(code === `JANJC63`){
-        codeClass = 25;
-    }
-    const YHDNU32 = messageClass - (messageClass * 25 / 100);
-    console.log(YHDNU32);
+    // let discountClass;
+    // if(discount === `YHDNU32`){
+    //     discountClass = 25; 
+    // }else if(discount === `JANJC63`){
+    //     discountClass = 25;
+    // }else if(discount === `PWKCN25`){
+    //     discountClass = 25; 
+    // }else if(discount === `SJDPO96`){
+    //     discountClass = 25; 
+    // }else if(discount === `POCIE24`){
+    //     discountClass = 25;
+    // }else if(discount === ``){
+    //     discountClass = "";
+    // }
+
+
+    // const discount = messageClass - (messageClass * 25 / 100);
     
-    const finalPrice = messageClass - (messageClass * 25 / 100);
-    console.log(finalPrice);
+    // const finalPrice = messageClass - discountClass;
+    // console.log(finalPrice);
 
-
+    //stampa prezzo su pagina
     messageElement.innerText = `€ ${messageClass}`;
 }
