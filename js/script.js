@@ -35,6 +35,8 @@ for (let i = 0; i < service.length; i++){
 
 const requestQuote = document.getElementById("request-quote");
 const nameInput = document.getElementById("name");
+const surnameInput = document.getElementById("surname");
+const emailInput = document.getElementById("email");
 const serviceSelect = document.getElementById("service");
 const messageElement = document.getElementById("message");
 const prideElement = document.getElementById("pride");
@@ -46,6 +48,8 @@ function handlerequestQuote(event){
     event.preventDefault();
     console.log("request-quote");
     const name = nameInput.value;
+    const surname = surnameInput.value;
+    const email = emailInput.value;
     const service = serviceSelect.value;
 
     
